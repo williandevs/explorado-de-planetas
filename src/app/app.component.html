@@ -1,0 +1,26 @@
+<div class="div-conteudo" *ngIf="planetaSelecionado">
+  <img class="img-planeta planeta-roda" [src]="planetaSelecionado.imagem" alt="">
+  
+    <p>Nome: <span>{{planetaSelecionado.nome}}</span></p>
+    <p>Superfície: <span>{{planetaSelecionado.superficie}} km</span></p>
+    <p>Diâmentro: <span>{{planetaSelecionado.diamentro}}</span></p>
+    <p>Tamanho: <span>{{planetaSelecionado.tamanho}}</span></p>
+    <p>Distância do Sol: <span>{{planetaSelecionado.distanciaSol}} km </span></p>
+    <p>Satélite Natural: <span>{{planetaSelecionado.satelite }}</span></p>
+    <p>rotação: <span>{{planetaSelecionado.rotacao}}</span></p>
+    <p>translação: <span>{{planetaSelecionado.translacao}}</span></p>
+    <p>Temperatura média: <span>{{planetaSelecionado.temperatura}}ºC</span></p>
+    <p>chanceDeVida: <span>{{planetaSelecionado.chanceDeVida}}</span></p>
+    <p>População: <span>{{planetaSelecionado.populacao}}</span></p>
+    <br>
+    <p>curiosidades da terra:<span class="span2">{{planetaSelecionado.curiosidade}}</span>.</p>
+  </div>
+
+
+  <div class="planeta-terra" *ngFor="let planeta of planetas; index as i">
+    
+      <img (click)="clicouNoPlaneta(planeta)" 
+       class="img-planeta planeta-roda animation-{{i}}" 
+       [src]="planeta.imagem" alt="planeta Terra">
+  </div>
+

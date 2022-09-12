@@ -1,0 +1,27 @@
+.creditos {
+  font-size: 50%;
+  position: absolute;
+  bottom: 0;
+ 
+}
+
+@media (max-width: 767px){
+ html body{
+   height: 100vh;
+    background-image: url('https://drive.google.com/uc?id=1cm27lEc862JFE00Nxy-sSozdYxbeiMBy');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+body{
+  height: 100vh;
+  background-image: url("https://drive.google.com/uc?id=1rN4M5GvAcNF32XLq6O76tpsVEvQ5P2bD");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.125rem;
+}
